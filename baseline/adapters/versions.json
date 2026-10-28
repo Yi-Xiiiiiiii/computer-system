@@ -1,0 +1,19 @@
+{
+  "pipeann": {
+    "repository": "https://github.com/thustorage/PipeANN.git",
+    "commit": "2ec84fe20c37dc3cc236b66f7eba31c0cc80bf1e",
+    "note": "Official main commit with the unified filter-config schema."
+  },
+  "gateann": {
+    "repository": "https://github.com/GyuyeongKim/GateANN-public.git",
+    "commit": "71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd",
+    "course_patch": "patches/gateann_aio_compat.patch",
+    "note": "Official artifact commit plus a one-line AIO compile fix supplied by the course."
+  },
+  "filtered_diskann": {
+    "repository": "https://github.com/microsoft/DiskANN.git",
+    "branch": "cpp_main",
+    "commit": "78256bbab4685e1774e78d331e081a153be26823",
+    "note": "Legacy C++ branch implementing Filtered-DiskANN."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "system": "pipeann",
+  "tier": "debug_100000",
+  "bucket": "high",
+  "dataset": {
+    "base_size": 100000,
+    "dimension": 192,
+    "metadata_columns": 200386,
+    "metadata_nnz": 1087574,
+    "workload_dir": "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high",
+    "query_count": 200,
+    "ground_truth_k": 100
+  },
+  "command": [
+    "/home/wgh/workspace/ssd_split/systems/PipeANN/build/tests/search_disk_index_filtered",
+    "uint8",
+    "/home/wgh/workspace/ssd_split/course_runs/indices/pipeann/debug_100000/yfcc",
+    "1",
+    "8",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high/query.u8bin",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high/ground_truth.diskann.bin",
+    "10",
+    "l2",
+    "pq",
+    "/home/wgh/workspace/ssd_split/course_runs/results/pipeann/debug_100000/high/debug-check-20261010-185805/filter_config.json",
+    "0",
+    "40"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.8377485601231456,
+  "peak_rss_kb": 100404
+}

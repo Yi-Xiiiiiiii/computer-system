@@ -1,0 +1,14 @@
+{
+  "attr_indexes": [
+    {
+      "name": "tags",
+      "key": 0,
+      "type": "label",
+      "file": "/home/wgh/workspace/ssd_split/course_runs/indices/pipeann/formal_1000000/yfcc.label.0"
+    }
+  ],
+  "filter": "array_contains_all(tags, $$query_tags)",
+  "bindings": {
+    "query_tags": "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/formal_1000000/workloads/high/query.metadata.spmat"
+  }
+}

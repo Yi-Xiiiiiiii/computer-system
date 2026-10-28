@@ -1,0 +1,85 @@
+experiment_id=20261010-190118
+repeats=3
+threads=1
+beamwidth=8
+topk=10
+pipeann_high_l=20 40 80
+pipeann_representative_l=40
+gateann_high_l=160 320 640
+gateann_representative_l=320
+io_backend=aio
+pipeann_repo=/home/wgh/workspace/ssd_split/systems/PipeANN
+pipeann_commit=2ec84fe20c37dc3cc236b66f7eba31c0cc80bf1e
+gateann_repo=/home/wgh/workspace/ssd_split/systems/GateANN-public
+gateann_commit=71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd
+gateann_patch_sha256=d90657151bf1adc735bc6916e4120690a64288281fe76ac24ad2e4a859662bc1  /home/wgh/workspace/ssd_split/patches/gateann_aio_compat.patch
+
+[uname]
+Linux n20 5.15.0-140-generic #150-Ubuntu SMP Sat Apr 12 06:00:09 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+[lscpu]
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        46 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               48
+On-line CPU(s) list:                  0-47
+Vendor ID:                            GenuineIntel
+Model name:                           Intel(R) Xeon(R) Silver 4214 CPU @ 2.20GHz
+CPU family:                           6
+Model:                                85
+Thread(s) per core:                   2
+Core(s) per socket:                   12
+Socket(s):                            2
+Stepping:                             7
+CPU max MHz:                          3200.0000
+CPU min MHz:                          1000.0000
+BogoMIPS:                             4400.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+Virtualization:                       VT-x
+L1d cache:                            768 KiB (24 instances)
+L1i cache:                            768 KiB (24 instances)
+L2 cache:                             24 MiB (24 instances)
+L3 cache:                             33 MiB (2 instances)
+NUMA node(s):                         2
+NUMA node0 CPU(s):                    0-11,24-35
+NUMA node1 CPU(s):                    12-23,36-47
+Vulnerability Gather data sampling:   Mitigation; Microcode
+Vulnerability Itlb multihit:          KVM: Mitigation: VMX disabled
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Mitigation; TSX disabled
+
+[memory]
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi        52Gi        60Gi        26Gi       139Gi       171Gi
+Swap:          8.0Gi       7.7Gi       318Mi
+
+[block-devices]
+NAME    MODEL                       SIZE ROTA TRAN
+loop0                              50.3M    0 
+loop1                              44.7M    0 
+loop2                              58.3M    0 
+loop3                                74M    0 
+loop4                                74M    0 
+sda     ST2000NM0008-2F3            1.8T    1 sata
+sdb     ST2000NM0008-2F3            1.8T    1 sata
+sdc     HGST HUS726T4TAL            3.6T    1 sata
+sdd     ST2000NM0008-2F3            1.8T    1 sata
+nvme0n1 SAMSUNG MZPLJ1T6HBJR-00007  1.5T    0 nvme
+
+[compiler]
+c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

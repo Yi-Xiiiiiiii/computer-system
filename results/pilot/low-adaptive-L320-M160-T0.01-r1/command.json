@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/wgh/workspace/ssd_split/github_submission/build/adaptive_benchmark",
+    "/home/wgh/workspace/ssd_split/course_runs/indices/gateann/formal_1000000/yfcc",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/formal_1000000/base.metadata.spmat",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/formal_1000000/workloads/low",
+    "adaptive",
+    "320",
+    "160",
+    "0.01",
+    "/home/wgh/workspace/ssd_split/github_submission/results/pilot/low-adaptive-L320-M160-T0.01-r1/queries.csv",
+    "/home/wgh/workspace/ssd_split/github_submission/results/pilot/low-adaptive-L320-M160-T0.01-r1/results.ids.ibin"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.535073515959084,
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  }
+}

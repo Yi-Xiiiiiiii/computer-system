@@ -1,0 +1,115 @@
+{
+  "platform": "Linux-5.15.0-140-generic-x86_64-with-glibc2.35",
+  "cpu_count": 48,
+  "load_average": [
+    2.0146484375,
+    2.82373046875,
+    3.25634765625
+  ],
+  "started_local": "2026-10-28 20:30:29 +0800",
+  "configs": [
+    [
+      "low",
+      "graph",
+      320,
+      40,
+      0.01
+    ],
+    [
+      "low",
+      "graph",
+      1280,
+      40,
+      0.01
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      10,
+      0.01
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      20,
+      0.01
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      40,
+      0.01
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      80,
+      0.01
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      160,
+      0.01
+    ],
+    [
+      "medium",
+      "graph",
+      320,
+      40,
+      0.01
+    ],
+    [
+      "medium",
+      "adaptive",
+      320,
+      40,
+      0.01
+    ],
+    [
+      "high",
+      "graph",
+      320,
+      40,
+      0.01
+    ],
+    [
+      "high",
+      "adaptive",
+      320,
+      40,
+      0.01
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      40,
+      0.0
+    ],
+    [
+      "low",
+      "adaptive",
+      320,
+      40,
+      0.005
+    ]
+  ],
+  "repeats": 3,
+  "gateann_commit": "71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd",
+  "input_sha256": {
+    "datasets/yfcc_course_v1/formal_1000000/base.metadata.spmat": "78d5c47b625293a20e358a4dc790a0c1246de63cc4bddb42bd0d4a2a09a46e0e",
+    "course_runs/indices/gateann/formal_1000000/yfcc_disk.index": "8d9c84520ed1f29d4bd509e44f7258e56230bf1a7139a785ec8bf954365ac955",
+    "course_runs/indices/gateann/formal_1000000/yfcc_pq_compressed.bin": "b45d005372d7ec8d43146cf2d3331c602ef087e3d9386256d3c809c9cd6c0498",
+    "course_runs/indices/gateann/formal_1000000/yfcc_pq_pivots.bin": "335fbdc65264b27bcbed9ff6a059c86865646bc52160602ef9e86e97243dd9bf"
+  },
+  "extension_sha256": {
+    "src/adaptive_search.h": "67d5af1dd485007c884efe08a48a702cc7087e21dff173d29552d695e1f91d97",
+    "src/benchmark.cpp": "48ce4f15c1274ac176738cceab7c8f3e10fe892d730d8f966fd3c1fb00a41641"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "system": "gateann",
+  "tier": "debug_100000",
+  "bucket": "high",
+  "dataset": {
+    "base_size": 100000,
+    "dimension": 192,
+    "metadata_columns": 200386,
+    "metadata_nnz": 1087574,
+    "workload_dir": "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high",
+    "query_count": 200,
+    "ground_truth_k": 100
+  },
+  "command": [
+    "/home/wgh/workspace/ssd_split/systems/GateANN-public/build/tests/search_disk_index_yfcc",
+    "uint8",
+    "/home/wgh/workspace/ssd_split/course_runs/indices/gateann/debug_100000/yfcc",
+    "1",
+    "8",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high/query.u8bin",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/base.metadata.spmat",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high/query.metadata.spmat",
+    "/home/wgh/workspace/ssd_split/datasets/yfcc_course_v1/debug_100000/workloads/high/ground_truth.ids.ibin",
+    "10",
+    "l2",
+    "pq",
+    "8",
+    "0",
+    "0",
+    "32",
+    "320"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.2847282299771905,
+  "peak_rss_kb": 134604
+}
